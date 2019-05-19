@@ -1,7 +1,7 @@
 {
-  "name": "angularjs-weather-app",
+  "name": "weather-forecast-app",
   "version": "1.0.0",
-  "description": "AngularJS TS & WebPack4 Weather App",
+  "description": "AngularJS TS & WebPack4 Weather Forecast App",
   "scripts": {
     "start:dev": "webpack-dev-server --config webpack-dev.config.js",
     "start:prod": "npm run build:prod && http-server",

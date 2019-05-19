@@ -1,1 +1,29 @@
-<div class="weather" ui-view>Data: {{$ctrl.data}}</div>
+<div class="weather" ui-view>
+  <h1 class="title">USA Weather Forecast</h1>
+  <div class="search">
+    <input ng-change="$ctrl.autoComplete(); $ctrl.search ? $ctrl.isListOpened = true : $ctrl.isListOpened = false"
+      placeholder="Search city name" ng-model="$ctrl.search" class="search-input" type="text">
+    <ul ng-show="$ctrl.isListOpened" class="search-list">
+      <li ng-repeat="city in $ctrl.cities" ng-click="$ctrl.selectCity(city)" class="search-list-item">
+        <span>{{city}}</span>
+      </li>
+    </ul>
+  </div>
+  <!-- <div class="loader" ng-if="$ctrl.isLoading">
+    Loading...
+  </div> -->
+  <div ng-show="$ctrl.forecast" class="forecast">
+    <div class="left">
+      <img class="icon" src="../../assets/sunny.png">
+      <div class="main">
+        <p class="city">{{$ctrl.forecast.city}}</p>
+        <p class="tmp">{{$ctrl.forecast.tmp}} &#8451;</p>
+      </div>
+    </div>
+    <div class="right">
+      <p class="description">{{$ctrl.forecast.description}}</p>
+      <p class="wind">Wind: {{$ctrl.forecast.wind}} km/h</p>
+      <p class="humidity">Humidity: {{$ctrl.forecast.humidity}}%</p>
+    </div>
+  </div>
+</div>

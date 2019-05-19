@@ -1,6 +1,6 @@
 export const configuration = ($locationProvider: angular.ILocationProvider) => {
   'ngInject';
-  // No url #
+  // TODO: Remove # from url
   // $locationProvider.html5Mode(true);
   $locationProvider.hashPrefix('');
 };

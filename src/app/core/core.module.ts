@@ -7,10 +7,10 @@ import { routing } from './core.routes';
 
 export const coreModule =
   angular.module('core', ['ui.router'])
-    // Register Module Components
+    // Components
     .component(App.selector, App)
     .component(Root.selector, Root)
-    // Register Module Configuration
+    // Configuration
     .config(configuration)
     .config(routing)
     .name;

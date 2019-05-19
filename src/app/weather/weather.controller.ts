@@ -24,9 +24,8 @@ export class WeatherController {
     }
     autoComplete() {
         this.cities = this.weatherService.getCity(this.search);
-        console.log(this.cities);
     }
-    async selectCity(city: string) {
+    selectCity(city: string) {
         this.search = city;
         this.isListOpened = false;
         this.forecast = this.weatherService.getForecast(city);

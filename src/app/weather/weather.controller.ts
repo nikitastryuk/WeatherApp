@@ -1,7 +1,7 @@
 import { WeatherService } from './weather.service';
 
 // TODO: Move to shared models
-interface IForecast {
+export interface IForecast {
     city: string;
     description: string;
     tmp: number;

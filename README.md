@@ -1,3 +1,1 @@
-# USA Weather Forecast App
-
-![](https://github.com/nikitastryuk/WeatherApp/blob/master/screens/Screenshot.png)
+![](https://github.com/nikitastryuk/WeatherForecastApp/blob/master/screens/Screenshot.png)
